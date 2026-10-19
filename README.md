@@ -37,9 +37,3 @@ Sheets used: `fact_match` (60 rows), `fact_player` (201 rows), `dim_team` (8), `
 - Team-level wickets (799) count wickets lost by batting sides in each innings; player-level wickets total 178 because player rows cover only about 3 players per match. Player leaderboards are therefore a sample.
 - Small samples (13 to 16 matches per team, 5 to 8 per venue): treat results as indicative.
 
-## Run
-```
-pip install pandas matplotlib openpyxl
-python analysis.py
-```
-Update the input path at the top of `analysis.py` to your copy of the workbook.
