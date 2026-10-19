@@ -30,10 +30,3 @@ Sheets used: `fact_match` (60 rows), `fact_player` (201 rows), `dim_team` (8), `
 - Strike rate = runs / balls x 100 (rows with balls faced > 0). Economy = runs conceded / overs (rows with overs > 0).
 - Venue average = mean of first- and second-innings averages.
 
-## Data quality notes (please verify at source)
-- 10 of 60 matches list a `Match_Winner` who did not play; excluded from win, toss and home analysis. Run totals in 7 matches also conflict with the recorded winner.
-- The workbook's average strike rate (106.7) includes bowling-only rows with 0. Correct weighted value: **166.0**.
-- The workbook's Economy KPI sums the column (613.4). Correct weighted value: **7.08**.
-- Team-level wickets (799) count wickets lost by batting sides in each innings; player-level wickets total 178 because player rows cover only about 3 players per match. Player leaderboards are therefore a sample.
-- Small samples (13 to 16 matches per team, 5 to 8 per venue): treat results as indicative.
-
